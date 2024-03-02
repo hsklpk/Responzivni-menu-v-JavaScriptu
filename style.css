@@ -1,0 +1,63 @@
+:root {
+  --hlp-color-1: #6ac5ac;
+  --hlp-color-2: #d64078;
+  --hlp-color-3: #fdc72f;
+  --body-text: #000;
+  --navigation-text: #fff;
+  --header-background: #15304c;
+}
+
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Záhlaví */
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 70px;
+  background-color: var(--header-background);
+}
+
+/* Logo */
+header .logo {
+  flex-grow: 1;
+}
+header .logo img {
+  width: 200px;
+  margin-left: 20px;
+}
+
+/* Navigace */
+header nav {
+  margin-right: 30px;
+}
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+header nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+header nav ul li a {
+  color: var(--navigation-text);
+  text-decoration: none;
+}
+/* Ikona */
+header .menu-icon {
+  display: none;
+  margin-right: 30px;
+}
+
+/* Sekce Welcome */
+main .welcome {
+  width: 100%;
+  min-height: calc(100vh - 70px);
+  background: no-repeat center/cover url(images/background.webp);
+}

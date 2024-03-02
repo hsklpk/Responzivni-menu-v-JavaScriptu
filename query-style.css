@@ -1,0 +1,34 @@
+@media (max-width: 600px) {
+  /* Záhlaví */
+  header {
+    position: relative;
+  }
+  /* Navigace */
+  header nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    background-color: var(--header-background);
+  }
+  header nav ul li {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  /* Ikona */
+  header .menu-icon {
+    display: block;
+    color: var(--navigation-text);
+    font-size: 24px;
+    cursor: pointer;
+  }
+}
+
+/* Zobrazení hlavní navigace na desktopu */
+@media (min-width: 600px) {
+  header nav {
+    display: block !important;
+  }
+}
