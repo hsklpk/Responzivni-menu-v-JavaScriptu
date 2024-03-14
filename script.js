@@ -1,9 +1,15 @@
 const menuIcon = document.querySelector(".menu-icon");
-const hamburgerIcon = document.querySelector(".fa-solid");
 const menuList = document.querySelector("nav");
+const main = document.querySelector("welcome");
+const hamburgerIcon = document.querySelector(".fa-solid");
+const hamburgerIconClasses = hamburgerIcon.classList;
 
 menuIcon.addEventListener("click", () => {
-    hamburgerIcon.classList.toggle("fa-bars");
-    hamburgerIcon.classList.toggle("fa-xmark");
-    menuList.classList.toggle("active");
+    if (hamburgerIconClasses.contains("fa-bars")) {
+        hamburgerIconClasses.toggle("fa-bars", "fa-xmark");
+        menuList.style.width = "250px";
+    } else {
+        hamburgerIconClasses.toggle("fa-xmark", "fa-bars");
+        menuList.style.width = "0";
+    }
 });
