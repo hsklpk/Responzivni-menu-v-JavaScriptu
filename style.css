@@ -32,7 +32,9 @@ header .logo img {
 /* Navigace */
 header nav {
   margin-right: 30px;
-  width: 250px;
+}
+header nav.active {
+    width: 250px;
 }
 header nav ul {
   list-style-type: none;
